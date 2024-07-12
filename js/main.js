@@ -92,13 +92,11 @@
     let showPromo = url.searchParams.get('show_promotion');
     var promoModal = new bootstrap.Modal( promoModalElem );
 
-    $(window).one('click',() => {
-      if( showPromo && showPromo === 'bonus_content' ) {
-        setTimeout(()=>{
-          if( promoModal ) promoModal.show();
-        },500);
-      }
-    })
+    if( showPromo && showPromo === 'bonus_content' ) {
+      setTimeout(()=>{
+        if( promoModal ) promoModal.show();
+      },2000);
+    }
   }
 
   promoModalElem.addEventListener('shown.bs.modal', function () {
