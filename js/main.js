@@ -4,7 +4,7 @@
 
   // preloader
   $(window).on('load', function() {
-    $('.loader').fadeOut('slow');
+    $('.loader').fadeOut('fast');
   });
 
   // smooth scroll
@@ -81,5 +81,34 @@
       }
 
   });
+
+  let shownBonusPromo = localStorage.getItem('shown_bonus_promo') || false;
+  
+  var promoModalElem = $('#promoModal').get(0);
+  var promoVideo = $('#bonus-promo-video').get(0);
+
+  if( !shownBonusPromo ){
+    let url = new URL(window.location.href);
+    let showPromo = url.searchParams.get('show_promotion');
+    var promoModal = new bootstrap.Modal( promoModalElem );
+
+    $(window).one('click',() => {
+      if( showPromo && showPromo === 'bonus_content' ) {
+        setTimeout(()=>{
+          if( promoModal ) promoModal.show();
+        },500);
+      }
+    })
+  }
+
+  promoModalElem.addEventListener('shown.bs.modal', function () {
+    if( promoVideo ) promoVideo.play();
+    localStorage.setItem('shown_bonus_promo','true');
+  })
+
+  promoModalElem.addEventListener('hidden.bs.modal', function () {
+    if( promoVideo ) promoVideo.load();
+    promoModal.dispose();
+  })
 
 })();

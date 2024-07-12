@@ -22,15 +22,43 @@
 		<div class="siteContainer">
 		
 		<!-- loader -->
-		<!-- <div class="loader">
+		<div class="loader">
 	      	<div class="loading">
 		        <div class="spinner-grow aloader" role="status">
 		      		<span class="sr-only"></span>
 		    	</div>
 		    </div>
-	    </div> -->
+	    </div>
 		<!-- end loader -->
 
+		<div class="modal fade" id="promoModal" tabindex="-1" aria-labelledby="promoModal" aria-hidden="false" >
+			<div class="modal-dialog modal-lg modal-dialog-centered">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h3 class="modal-title text-center flex-grow-1 fs-1">זאת הצעה חד פעמית שלא תחזור יותר</h3>
+						<button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+
+					<div class="modal-body">
+
+						<div id="promo-video-container" class="video-container">
+							<video id="bonus-promo-video" preload="auto" src="img/bonus-content-promo.mkv" controls poster="img/poster-video.png"></video>
+							<!-- <div class="play-button"></div> -->
+						</div>
+
+						<div class="text-center fs-4">
+							זוהי הדרך המהירה ביותר להגיע מההתכתבות לדייט ולהפוך את התהליך הזה של לצאת עם דוגמניות מהאינסטגרם למשהו פשוט ואוטומטי אל תוותר על עצמך
+						</div>
+					</div>
+
+					<div class="modal-footer justify-content-center">
+        				<button type="button" onclick="redirectToURL('https:\/\/pay.sumit.co.il/6qhgyh/7zeykg/7zeykh/payment/')" class="btn btn-warning fs-2">תקנה את זה עכשיו</button>
+      				</div>
+				</div>
+			</div>
+		</div>
 
 		<!-- navbar -->
 		<div id="navbar" class="navbar navbar-expand-lg justify-content-center align-items-center">
@@ -50,7 +78,7 @@
 			    </div>
 			   
 			    <ul class="button-navbar">
-			    	<li><button style="font-size: x-large; direction: rtl;" class="button" onclick="redirectToURL()"><span style="font-size: larger; font-weight: bold">תשיג את זה עכשיו!</span></button></li>
+			    	<li><button style="font-size: x-large; direction: rtl;" class="button" onclick="redirectToURL('https:\/\/pay.sumit.co.il/6qhgyh/6r1inb/6r1inc/payment/')"><span style="font-size: larger; font-weight: bold">תשיג את זה עכשיו!</span></button></li>
 			    </ul>
 			</div>
 		</div>
@@ -68,14 +96,14 @@
 								<h1 style="text-align: right;">השיטה המקיפה שלי למגנט נשים יפות לחיים שלך ברשתות חברתיות</h1>
 								<div class="entry">
 									<p style="text-align: right; direction: rtl;" class="p-header">	אנחנו כאן כדי לעזור לך להוציא את המקסימום מעצמך <span class="animated-underline">ומהמשחק שלך</span></p>
-									<button class="button" style="font-size: x-large;" onclick="redirectToURL()"><span style="font-size: larger; font-weight: bold;">!תשיג את זה עכשיו</span></button>
+									<button class="button" style="font-size: x-large;" onclick="redirectToURL('https:\/\/pay.sumit.co.il/6qhgyh/6r1inb/6r1inc/payment/')"><span style="font-size: larger; font-weight: bold;">!תשיג את זה עכשיו</span></button>
 								</div>
 								</ul>
 							</div>
 						</div>
 						
 						<div class="video-container">
-							<video id="myVideo" src="img/hero-section-clip.mp4" controls poster="img/poster-video.png"></video>
+							<video preload="none" id="myVideo" src="img/hero-section-clip.mp4" controls poster="img/poster-video.png"></video>
 							<!-- <div class="play-button"></div> -->
 						</div>
 					</div>
@@ -104,7 +132,7 @@
 						<div class="content-right" style="justify-content: center; display: flex; flex-direction: column; align-items: center;">
 
 
-							<button class="button about-btn" style="font-size: x-large;" onclick="redirectToURL()"><span style="font-size: larger; font-weight: bold;"><span style="font-size: larger; font-weight: bold;">!תשיג את זה עכשיו</span></button>
+							<button class="button about-btn" style="font-size: x-large;" onclick="redirectToURL('https:\/\/pay.sumit.co.il/6qhgyh/6r1inb/6r1inc/payment/')"><span style="font-size: larger; font-weight: bold;"><span style="font-size: larger; font-weight: bold;">!תשיג את זה עכשיו</span></button>
 							<br />
 						</div>
 					</div>
@@ -126,14 +154,8 @@
 			<div class="container">
 				<!-- <h2>,היי, כאן דולב <br /></h2> -->
 				
-			
 				<!-- <div class="divider" style="overflow-x: visible;"></div> -->
-
-
-				
 				<div class="row g-5">
-
-
 					<div class="relative h-screen">
 						<img src="img/gallery6.webp" loading="lazy" alt="Person" class="full-img" />
 						<div class="overlay-right" style="background-color: white;">
@@ -153,9 +175,6 @@
 							<div class="approachingText">החברים שהקיפו אותי התחילו להתעלם ממני, אני הרגשתי בסוף נטוש, ונדחפתי חזרה עמוק עמוק אל תוך הראש שלי.</div>
 						</div>
 					</div>
-
-		
-				
 
 					<div class="relative h-screen">
 						<img src="img/gallery14.webp" loading="lazy" alt="Person" class="full-img" />
@@ -355,7 +374,7 @@
 					</div> -->
 
 					<div style="display: flex; justify-content: center; align-items: center;">
-						<button class="button" onclick="redirectToURL()" style="width: auto; font-size: 40px; color: white; background-color: rgb(117, 180, 235); padding-left: 5rem; padding-right: 5rem;">תשיג את זה עכשיו</button>
+						<button class="button" onclick="redirectToURL('https:\/\/pay.sumit.co.il/6qhgyh/6r1inb/6r1inc/payment/')" style="width: auto; font-size: 40px; color: white; background-color: rgb(117, 180, 235); padding-left: 5rem; padding-right: 5rem;">תשיג את זה עכשיו</button>
 					</div>
 
 
@@ -505,7 +524,7 @@
 							<p style="direction: rtl; color: white; text-align: center; overflow-x: visible; font-weight: bolder">זה או שאתה משיג את הבחורה, או שאתה לא.</p>
 							<p style="direction: rtl; color: white; text-align: center; overflow-x: visible; font-weight: bolder">תפסיק לשקר לעצמך, תפסיק להתפשר, ותפסיק לבזבז את הזמן.</p>
 						
-							<button class="button about-btn" style="font-size: xx-large; background-color: rgb(96, 159, 255);" onclick="redirectToURL()">תשיג את זה עכשיו</button>
+							<button class="button about-btn" style="font-size: xx-large; background-color: rgb(96, 159, 255);" onclick="redirectToURL('https:\/\/pay.sumit.co.il/6qhgyh/6r1inb/6r1inc/payment/')">תשיג את זה עכשיו</button>
 						</div>		
 </div>
 						<hr />				 
@@ -580,19 +599,19 @@
 					<div style="display: flex; justify-content: center; align-items: center; flex-direction: column; ">
 						<img src="./img/IMG_4584.webp" alt="table-chart" />
 						<br />
-						<button class="button about-btn" style=" font-size: x-large; background-color: #edcc36; color: black" onclick="redirectToURL()"><span style="font-size: larger; font-weight: bold;"><span style="font-size: larger; font-weight: bold;">!תשיג את זה עכשיו</span></button>
+						<button class="button about-btn" style=" font-size: x-large; background-color: #edcc36; color: black" onclick="redirectToURL('https:\/\/pay.sumit.co.il/6qhgyh/6r1inb/6r1inc/payment/')"><span style="font-size: larger; font-weight: bold;"><span style="font-size: larger; font-weight: bold;">!תשיג את זה עכשיו</span></button>
 						<br />
 					</div>
 					<div style="display: flex; justify-content: center; align-items: center; flex-direction: column; ">
 						<img src="./img/IMG_4585.webp" alt="table-chart" />
 						<br />
-						<button class="button about-btn" style=" font-size: x-large; background-color: #edcc36;color: black " onclick="redirectToURL()"><span style="font-size: larger; font-weight: bold;"><span style="font-size: larger; font-weight: bold;">!תשיג את זה עכשיו</span></button>
+						<button class="button about-btn" style=" font-size: x-large; background-color: #edcc36;color: black " onclick="redirectToURL('https:\/\/pay.sumit.co.il/6qhgyh/6r1inb/6r1inc/payment/')"><span style="font-size: larger; font-weight: bold;"><span style="font-size: larger; font-weight: bold;">!תשיג את זה עכשיו</span></button>
 						<br />
 					</div>
 					<div style="display: flex; justify-content: center; align-items: center; flex-direction: column; ">
 						<img src="./img/IMG_4586.webp" alt="table-chart" />
 						<br />
-						<button class="button about-btn" style=" font-size: x-large; background-color: #edcc36; color: black" onclick="redirectToURL()"><span style="font-size: larger; font-weight: bold;"><span style="font-size: larger; font-weight: bold;">!תשיג את זה עכשיו</span></button>
+						<button class="button about-btn" style=" font-size: x-large; background-color: #edcc36; color: black" onclick="redirectToURL('https:\/\/pay.sumit.co.il/6qhgyh/6r1inb/6r1inc/payment/')"><span style="font-size: larger; font-weight: bold;"><span style="font-size: larger; font-weight: bold;">!תשיג את זה עכשיו</span></button>
 						<br />
 					</div>
 
@@ -668,7 +687,7 @@
 					<div style="display: flex; flex-direction: column; justify-content: center; align-items: center; background-color: black;">
 						<h6 style="direction: rtl;">טוב, אז אם עדיין לא לחצת על הלינק למטה ו…</h6> 
 						<br />
-						 <button class="button about-btn" style="font-size: x-large; background-color: rgb(96, 159, 255);" onclick="redirectToURL()">
+						 <button class="button about-btn" style="font-size: x-large; background-color: rgb(96, 159, 255);" onclick="redirectToURL('https:\/\/pay.sumit.co.il/6qhgyh/6r1inb/6r1inc/payment/')">
 							<span style="font-size: larger; font-weight: bold;"><span style="font-size: larger; font-weight: bold;">!תשיג את זה עכשיו</span>
 						</button> 
 						<br /><p style="direction: rtl;"><span style="font-weight: 800; font-size: larger;">פטרון ברשתות</span> זאת תכנית שהשקעתי קצת יותר מעשור מהחיים שלי לפתח, וזה הולך להשפיע לך על החיים בצורה מאוד חזקה, ואתה לא תתחרט על זה.</p>
@@ -678,7 +697,7 @@
 							<span style="font-weight: 800; font-size: larger;">פטרון ברשתות</span>
 							, ואני אראה אותך בקצה השני
 						</p>
-						<button class="button about-btn" style="font-size: x-large; background-color: rgb(96, 159, 255);" onclick="redirectToURL()"><span style="font-size: larger; font-weight: bold;">
+						<button class="button about-btn" style="font-size: x-large; background-color: rgb(96, 159, 255);" onclick="redirectToURL('https:\/\/pay.sumit.co.il/6qhgyh/6r1inb/6r1inc/payment/')"><span style="font-size: larger; font-weight: bold;">
 							<span style="font-size: larger; font-weight: bold;">!תשיג את זה עכשיו</span></button> <br />
 								</div>
 
@@ -738,19 +757,19 @@
 		<div style="display: flex; justify-content: center; align-items: center; flex-direction: column; ">
 			<img src="./img/IMG_4584.webp" alt="table-chart" />
 			<br />
-			<button class="button about-btn" style=" font-size: x-large; background-color: #edcc36; color: black" onclick="redirectToURL()"><span style="font-size: larger; font-weight: bold;"><span style="font-size: larger; font-weight: bold;">!תשיג את זה עכשיו</span></button>
+			<button class="button about-btn" style=" font-size: x-large; background-color: #edcc36; color: black" onclick="redirectToURL('https:\/\/pay.sumit.co.il/6qhgyh/6r1inb/6r1inc/payment/')"><span style="font-size: larger; font-weight: bold;"><span style="font-size: larger; font-weight: bold;">!תשיג את זה עכשיו</span></button>
 			<br />
 		</div>
 		<div style="display: flex; justify-content: center; align-items: center; flex-direction: column; ">
 			<img src="./img/IMG_4585.webp" alt="table-chart" />
 			<br />
-			<button class="button about-btn" style=" font-size: x-large; background-color: #edcc36; color: black" onclick="redirectToURL()"><span style="font-size: larger; font-weight: bold;"><span style="font-size: larger; font-weight: bold;">!תשיג את זה עכשיו</span></button>
+			<button class="button about-btn" style=" font-size: x-large; background-color: #edcc36; color: black" onclick="redirectToURL('https:\/\/pay.sumit.co.il/6qhgyh/6r1inb/6r1inc/payment/')"><span style="font-size: larger; font-weight: bold;"><span style="font-size: larger; font-weight: bold;">!תשיג את זה עכשיו</span></button>
 			<br />
 		</div>
 		<div style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
 			<img src="./img/IMG_4586.webp" alt="table-chart" />
 			<br />
-			<button class="button about-btn" style=" font-size: x-large; background-color: #edcc36; color: black;" onclick="redirectToURL()"><span style="font-size: larger; font-weight: bold;"><span style="font-size: larger; font-weight: bold;">!תשיג את זה עכשיו</span></button>
+			<button class="button about-btn" style=" font-size: x-large; background-color: #edcc36; color: black;" onclick="redirectToURL('https:\/\/pay.sumit.co.il/6qhgyh/6r1inb/6r1inc/payment/')"><span style="font-size: larger; font-weight: bold;"><span style="font-size: larger; font-weight: bold;">!תשיג את זה עכשיו</span></button>
 			<br />
 		</div>
 
@@ -889,8 +908,9 @@
 		<script src="js/main.js"></script>
 		
 		<script>
-			function redirectToURL() {
-				window.location.href = 'https://pay.sumit.co.il/6qhgyh/6r1inb/6r1inc/payment/';
+			function redirectToURL( url ) {
+				// https://pay.sumit.co.il/6qhgyh/6r1inb/6r1inc/payment/
+				window.location.href = url;
 			}
 
 			var video = document.getElementById('myVideo');
